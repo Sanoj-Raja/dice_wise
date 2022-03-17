@@ -1,16 +1,11 @@
 # dice_wise
 
-A new Flutter project.
+A dice game build in flutter.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a dice game it's a Flutter application.
+User has to sign in the game using google id.
+User can play by rolling the dice and have 10 chances total.
+Scores should be updated online can user can see the leader board
+which shows the name of player & his score.
