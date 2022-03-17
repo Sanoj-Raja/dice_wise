@@ -70,7 +70,7 @@ class CustomDrawer extends StatelessWidget {
               color: Colors.black,
             ),
             onTap: () {
-              // TODO: Implement navigation to leader board here.
+              Get.toNamed(Routes.LEADER_BOARD);
             },
           ),
           ListTile(
