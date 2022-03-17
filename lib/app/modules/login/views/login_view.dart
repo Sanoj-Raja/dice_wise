@@ -30,7 +30,7 @@ class LoginView extends GetView<LoginController> {
               ),
               LargeButton(
                 buttonText: AppStrings.signInWithGoogle,
-                onPressed: controller.googleSignIn,
+                onPressed: controller.clickToSignInWithGoogle,
                 isUpperCaseButtonText: false,
                 buttonLeftImage: AppImages.google,
                 fontSize: 20,
