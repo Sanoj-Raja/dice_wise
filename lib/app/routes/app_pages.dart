@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import 'package:dice_wise/app/modules/home/bindings/home_binding.dart';
 import 'package:dice_wise/app/modules/home/views/home_view.dart';
+import 'package:dice_wise/app/modules/leader_board/bindings/leader_board_binding.dart';
+import 'package:dice_wise/app/modules/leader_board/views/leader_board_view.dart';
 import 'package:dice_wise/app/modules/login/bindings/login_binding.dart';
 import 'package:dice_wise/app/modules/login/views/login_view.dart';
 import 'package:dice_wise/app/modules/splash/bindings/splash_binding.dart';
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.SPLASH,
       page: () => SplashView(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: _Paths.LEADER_BOARD,
+      page: () => LeaderBoardView(),
+      binding: LeaderBoardBinding(),
     ),
   ];
 }
