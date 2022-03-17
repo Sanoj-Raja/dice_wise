@@ -1,5 +1,5 @@
 class AppStrings {
-  static const String appTitle = 'Roll The Dice';
+  static const String appTitle = 'Dice Wise';
   static const String logout = 'Logout';
   static const String goBack = 'Go Back';
   static const String signInWithGoogle = 'Sign In with Google';
