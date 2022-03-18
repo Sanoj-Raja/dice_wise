@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 
 class LeaderBoardController extends GetxController {
-  // TODO: Implement code to fetch score data from firebase.
+  RxInt currentSortColumn = 0.obs;
+  RxBool isAscending = true.obs;
 }
