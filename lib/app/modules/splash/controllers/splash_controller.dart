@@ -17,6 +17,7 @@ class SplashController extends GetxController {
           USER_DETAILS.value = UserDetails(
             name: user.displayName,
             userImage: user.photoURL,
+            userId: user.uid,
           );
           Get.offAndToNamed(Routes.HOME);
         } else {

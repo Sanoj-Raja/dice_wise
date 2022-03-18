@@ -11,4 +11,5 @@ class AppStrings {
       'Welcome, click the button below to Continue.';
   static const String leaderBoard = 'Leader Board';
   static const String playerName =  "Player Name";
+  static const String version =  "Version";
 }

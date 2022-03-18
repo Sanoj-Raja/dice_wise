@@ -12,8 +12,9 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(.9),
-      drawer: const CustomDrawer(),
+      drawer: CustomDrawer(
+        appVersion: controller.appVersion,
+      ),
       appBar: AppBar(
         title: Text(
           'Welcome ${USER_DETAILS.value.name}',

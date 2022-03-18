@@ -8,7 +8,12 @@ import '../routes/app_pages.dart';
 import 'image_box.dart';
 
 class CustomDrawer extends StatelessWidget {
-  const CustomDrawer({Key? key}) : super(key: key);
+  const CustomDrawer({
+    Key? key,
+    required this.appVersion,
+  }) : super(key: key);
+
+  final RxString appVersion;
 
   @override
   Widget build(BuildContext context) {
@@ -103,6 +108,20 @@ class CustomDrawer extends StatelessWidget {
                 },
               );
             },
+          ),
+          ListTile(
+            title: Obx(
+              () => Text(
+                '${AppStrings.version}: ${appVersion.value}',
+                style: Get.textTheme.headline3!.copyWith(
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            leading: const Icon(
+              Icons.code,
+              color: Colors.black,
+            ),
           ),
         ],
       ),

@@ -7,9 +7,11 @@ Rx<UserDetails> USER_DETAILS = UserDetails().obs;
 class UserDetails {
   String? name;
   String? userImage;
+  String? userId;
 
   UserDetails({
     this.name,
     this.userImage,
+    this.userId,
   });
 }

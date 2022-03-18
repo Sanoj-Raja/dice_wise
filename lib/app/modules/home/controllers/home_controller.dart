@@ -1,8 +1,10 @@
 import 'dart:math';
 import 'package:get/get.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import '../../../constants/app_assest.dart';
 
 class HomeController extends GetxController {
+  RxString appVersion = ''.obs;
   List<String> diceImages = [
     AppImages.dice1,
     AppImages.dice2,
@@ -15,6 +17,17 @@ class HomeController extends GetxController {
   RxInt randomIntForDice = 5.obs;
   RxInt changesToPlay = 10.obs;
   RxInt scores = 0.obs;
+
+  @override
+  void onInit() {
+    PackageInfo.fromPlatform().then(
+      (info) {
+        appVersion.value = info.version;
+      },
+    );
+
+    super.onInit();
+  }
 
   void rollDice() {
     randomIntForDice.value = Random().nextInt(6);
