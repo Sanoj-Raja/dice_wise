@@ -17,7 +17,7 @@ class HomeView extends GetView<HomeController> {
       ),
       appBar: AppBar(
         title: Text(
-          'Welcome ${USER_DETAILS.value.name}',
+          '${AppStrings.welcome}, ${USER_DETAILS.value.name}',
           style: Get.textTheme.headline2!.copyWith(
             color: Colors.white,
             fontWeight: FontWeight.w600,

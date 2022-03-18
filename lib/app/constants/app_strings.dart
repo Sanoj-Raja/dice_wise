@@ -10,6 +10,11 @@ class AppStrings {
   static const String welcomeText =
       'Welcome, click the button below to Continue.';
   static const String leaderBoard = 'Leader Board';
-  static const String playerName =  "Player Name";
-  static const String version =  "Version";
+  static const String playerName = "Player Name";
+  static const String version = "Version";
+  static const String welcome = "Welcome";
+  static const String scoresUpdatedSuccessfully = "Score Updated Successfully!";
+  static const String scoresAddedSuccessfully = "Score Added Successfully!";
+  static const String yourHighestScoreIsGreater =
+      "Your highest score is greater than current score!";
 }

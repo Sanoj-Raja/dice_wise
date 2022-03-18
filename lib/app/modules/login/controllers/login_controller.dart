@@ -49,11 +49,6 @@ class LoginController extends GetxController {
             AppErrors.accountAlreadyExistsError,
             AppErrors.accountAlreadyExistsErrorDetails,
           );
-        } else if (e.code == 'invalid-credential') {
-          Get.snackbar(
-            AppErrors.invalidCredentials,
-            AppErrors.invalidCredentialsDetails,
-          );
         }
       } catch (e) {
         Get.snackbar(
