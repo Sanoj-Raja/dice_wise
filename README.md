@@ -1,4 +1,4 @@
-# dice_wise
+# Dice Wise
 
 A dice game build in flutter.
 
